@@ -10,7 +10,7 @@ data class WindowSize(
 ) {
     companion object {
         val UNKNOWN = WindowSize(-1, -1)
-        val DEFAULT = WindowSize(800, 400)
+        val DEFAULT = WindowSize(1400, 800)
     }
 }
 
