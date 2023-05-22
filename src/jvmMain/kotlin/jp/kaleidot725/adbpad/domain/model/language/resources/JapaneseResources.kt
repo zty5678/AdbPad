@@ -77,8 +77,7 @@ object JapaneseResources : StringResources {
     override val MENU_SCREENSHOT = "スクリーンショット"
 
     override val SETTING_LANGUAGE_HEADER = "表示言語"
-    override val SETTING_LANGUAGE_ENGLISH = "英語(English)"
-    override val SETTING_LANGUAGE_JAPANESE = "日本語"
+
 
     override val SETTING_APPEARANCE_HEADER = "テーマ"
     override val SETTING_ADB_HEADER = "ADB"

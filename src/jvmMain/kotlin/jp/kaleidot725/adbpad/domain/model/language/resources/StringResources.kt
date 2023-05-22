@@ -78,8 +78,8 @@ interface StringResources {
     val SETTING_APPEARANCE_HEADER: String
 
     val SETTING_LANGUAGE_HEADER: String
-    val SETTING_LANGUAGE_ENGLISH: String
-    val SETTING_LANGUAGE_JAPANESE: String
+
+
 
     val SETTING_ADB_HEADER: String
     val SETTING_ADB_DIRECTORY_PATH_TITLE: String
@@ -90,4 +90,11 @@ interface StringResources {
     val ADB_ERROR_TITLE: String
     val ADB_ERROR_MESSAGE: String
     val ADB_ERROR_OPEN_SETTING: String
+}
+
+object CommonStringResources{
+
+    val SETTING_LANGUAGE_ENGLISH: String = "English"
+    val SETTING_LANGUAGE_JAPANESE: String = "Japanese(日本語)"
+    val SETTING_LANGUAGE_CHINESE_ZH_CN: String = "Chinese Simplified(简体中文)"
 }

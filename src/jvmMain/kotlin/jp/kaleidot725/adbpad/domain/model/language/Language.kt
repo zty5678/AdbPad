@@ -1,8 +1,6 @@
 package jp.kaleidot725.adbpad.domain.model.language
 
-import jp.kaleidot725.adbpad.domain.model.language.resources.EnglishResources
-import jp.kaleidot725.adbpad.domain.model.language.resources.JapaneseResources
-import jp.kaleidot725.adbpad.domain.model.language.resources.StringResources
+import jp.kaleidot725.adbpad.domain.model.language.resources.*
 
 object Language : StringResources {
     override val VERSION: String
@@ -141,10 +139,14 @@ object Language : StringResources {
         get() = getCurrentResources().MENU_SCREENSHOT
     override val SETTING_LANGUAGE_HEADER: String
         get() = getCurrentResources().SETTING_LANGUAGE_HEADER
-    override val SETTING_LANGUAGE_ENGLISH: String
-        get() = getCurrentResources().SETTING_LANGUAGE_ENGLISH
-    override val SETTING_LANGUAGE_JAPANESE: String
-        get() = getCurrentResources().SETTING_LANGUAGE_JAPANESE
+
+    val SETTING_LANGUAGE_ENGLISH: String
+        get() = CommonStringResources.SETTING_LANGUAGE_ENGLISH
+    val SETTING_LANGUAGE_JAPANESE: String
+        get() = CommonStringResources.SETTING_LANGUAGE_JAPANESE
+    val SETTING_LANGUAGE_CHINESE_ZH_CN: String
+        get() = CommonStringResources.SETTING_LANGUAGE_CHINESE_ZH_CN
+
     override val SETTING_APPEARANCE_HEADER: String
         get() = getCurrentResources().SETTING_APPEARANCE_HEADER
     override val SETTING_ADB_HEADER: String
@@ -173,11 +175,13 @@ object Language : StringResources {
         return when (currentType) {
             Type.ENGLISH -> EnglishResources
             Type.JAPANESE -> JapaneseResources
+            Type.CHINESE_ZH_CN -> Chinese_ZH_CN_Resources
         }
     }
 
     enum class Type {
         ENGLISH,
-        JAPANESE
+        JAPANESE,
+        CHINESE_ZH_CN,
     }
 }
